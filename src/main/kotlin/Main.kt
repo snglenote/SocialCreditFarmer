@@ -74,7 +74,7 @@ fun App() {
 
 fun main() = application {
     val state = WindowState(size = DpSize(WIDTH.dp, HEIGHT.dp))
-    Window(onCloseRequest = ::exitApplication, state = state, resizable = false ) {
+    Window(onCloseRequest = ::exitApplication, state = state, resizable = false, title = "Social Credit Farmer" ) {
         App()
     }
 }
